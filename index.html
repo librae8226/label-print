@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>标签打印测试页</title> <style>
+    <title>标签打印测试页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+    /* paper-css */
     @page { margin: 0 }
     body { margin: 0 }
     .sheet {
@@ -55,6 +58,8 @@
     td { font-size: 11pt; height: 6mm }
     article { border: 4px double black; padding: 5mm 10mm; border-radius: 3mm }
     .qrcode { position: absolute; right: 10mm; bottom: 0mm }
+    .td-item { text-align: right }
+    .td-value {}
     </style>
   </head>
   <body class="Label landscape">
@@ -92,8 +97,8 @@
           <td>室温</td>
         </tr>
         <tr>
-          <td>配置人：</td>
-          <td>39</td>
+          <td class="td-item">配置人：</td>
+          <td class="td-value">39</td>
         </tr>
       </table>
       <p class="qrcode">
